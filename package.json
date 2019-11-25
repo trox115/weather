@@ -1,0 +1,26 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "The weather app, for microverse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trox115/weather.git"
+  },
+  "keywords": [
+    "Weather",
+    "microverse"
+  ],
+  "author": "António Fernandes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trox115/weather/issues"
+  },
+  "homepage": "https://github.com/trox115/weather#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2"
+  }
+}
