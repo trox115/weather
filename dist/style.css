@@ -1,0 +1,33 @@
+html {
+    height: 100%;
+}
+body{
+  background: gray;
+  height: 100%;
+}
+#container{
+width: 100%;
+height: 100%;
+background-size: cover;
+}
+
+.weather{
+  height: 100%;
+  width: 33.3%;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+.head{
+  width: 100%;
+  background: black;
+  height: 40%;
+}
+.weather-body{
+  height: 50%;
+  background: blue;
+}
+.weather-footer{
+  height: 10%;
+  background: red;
+}
