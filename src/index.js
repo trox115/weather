@@ -1,8 +1,21 @@
-const img = document.querySelector('#container');
-fetch('https://api.giphy.com/v1/gifs/translate?api_key=wzRauOka5VGGkO1WRrBhRFPHBsxpeQqf&s=rain', {mode: 'cors'})
-.then(function(response) {
-   return response.json();
- })
- .then(function(response) {
-   img.style.backgroundImage = "url("+response.data.images.original.url+")";
- });
+import { apiBackground } from "./backgroud";
+import { weatherApi } from "./Api";
+let city = "Évora";
+weatherApi(city).then(data => {
+  const weather = data.weather[0].main;
+  const temperature = data.main.temp;
+  const wind = data.wind.speed;
+  const cit = data.name;
+  const win = document.querySelector(".wind p");
+  const condition = document.querySelector(".condition p");
+
+  console.log(data);
+
+  const temp = document.querySelector(".temperature p");
+  temp.innerText = temperature;
+  const city = document.querySelector(".temperature2 p");
+  city.innerText = cit;
+  win.innerText = wind + "mph";
+  condition.innerText = weather;
+  apiBackground(weather);
+});
