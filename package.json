@@ -21,8 +21,12 @@
   },
   "homepage": "https://github.com/trox115/weather#readme",
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "eslint": "^6.7.1",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "webpack": "^4.41.2"
   }
 }
