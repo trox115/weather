@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang='en' dir='ltr'>
   <head>
-    <meta charset="utf-8">
-  <link rel="stylesheet" href="./style.css">
+    <meta charset='utf-8' />
+    <link rel='stylesheet' href='./style.css' />
     <title>Weather App</title>
   </head>
   <body>
     <div id='container'>
-      <img class="background" src='#'></img>
       <div class='weather'>
-        <div class="head">
+        <div class='head'>
+          <div class='temperature'>
+            <h3>Temperature :</h3>
+            <p></p>
+          </div>
+          <div class='temperature2'>
+            <h3>City:</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class='weather-body'>
+          <div class='wind'>
+            <h3>Wind :</h3>
+            <p></p>
+          </div>
 
+          <div class='condition'>
+            <h3>Condition :</h3>
+            <p></p>
+          </div>
         </div>
-        <div class="weather-body">
 
+        <div class='weather-footer'>
+          <label for='city-name'> Location : </label>
+          <input name='city-name' />
+          <button id='search'>Search</button>
         </div>
-        <div class="weather-footer">
-        </div>
+      </div>
     </div>
-   <script src="./main.js"></script>
+    <script src='./main.js'></script>
   </body>
 </html>
