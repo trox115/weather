@@ -5,4 +5,4 @@ async function weatherApi(city) {
   return data;
 }
 
-export { weatherApi };
+export default weatherApi;
