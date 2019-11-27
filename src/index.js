@@ -1,6 +1,8 @@
 import apiBackground from './backgroud';
 import weatherApi from './Api';
+import createBox from './domFile';
 
+createBox();
 const cit = 'Macedo de Cavaleiros';
 let cit2 = 'Fahrneit';
 function getWeather(cit, cit2) {
