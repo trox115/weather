@@ -14,13 +14,12 @@ body {
 .weather {
   height: 100%;
   width: 33.3%;
-  background: white;
   margin-left: auto;
   margin-right: auto;
 }
 .head {
   width: 100%;
-  background: black;
+  background: rgba(0, 0, 102,0.4);
   height: 40%;
   color: white;
   font-size: 2rem;
@@ -28,9 +27,11 @@ body {
   align-items: center;
   align-content: center;
   text-align: center;
+  border:1px solid black;
 }
 .head h3 {
   font-size: 14px;
+
 }
 .temperature {
   width: 50%;
@@ -43,8 +44,8 @@ body {
   font-size: 19px;
 }
 .weather-body {
-  height: 50%;
-  background: blue;
+  height: 40%;
+  background: rgba(0, 0, 102,0.4);
   width: 100%;
   color: white;
   font-size: 2rem;
@@ -52,6 +53,7 @@ body {
   align-items: center;
   align-content: center;
   text-align: center;
+  border:1px solid black;
 }
 .wind {
   width: 50%;
@@ -60,6 +62,7 @@ body {
   width: 50%;
 }
 .weather-footer {
-  height: 10%;
-  background: red;
+  height: 20%;
+  background: rgba(0, 0, 102,0.4);
+  border:1px solid black;
 }

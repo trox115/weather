@@ -2,8 +2,9 @@ import apiBackground from './backgroud';
 import weatherApi from './Api';
 
 const cit = 'Macedo de Cavaleiros';
-function getWeather(cit) {
-  weatherApi(cit).then((data) => {
+let cit2 = 'Fahrneit';
+function getWeather(cit, cit2) {
+  weatherApi(cit, cit2).then((data) => {
     const weather = data.weather[0].main;
     const temperature = data.main.temp;
     const wind = data.wind.speed;
@@ -19,12 +20,14 @@ function getWeather(cit) {
     apiBackground(weather);
   });
 }
-getWeather(cit);
+getWeather(cit, cit2);
 window.addEventListener('load', () => {
   const search = document.querySelector('#search');
   search.addEventListener('click', () => {
     const inputBox = document.querySelector('#city-name');
+    const selector = document.querySelector('.units');
     const text = inputBox.value;
-    getWeather(text);
+    cit2 = selector.value;
+    getWeather(text, cit2);
   });
 });
