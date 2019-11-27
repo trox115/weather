@@ -1,7 +1,6 @@
 import createEl from './creation';
 
 function createBox() {
-  console.log('hello');
   const container = document.querySelector('#container');
 
   const weather = createEl('div', 'weather');
