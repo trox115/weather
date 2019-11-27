@@ -1,7 +1,7 @@
 import apiBackground from './backgroud';
 import weatherApi from './Api';
 
-const cit = 'Évora';
+const cit = 'Macedo de Cavaleiros';
 function getWeather(cit) {
   weatherApi(cit).then((data) => {
     const weather = data.weather[0].main;
@@ -19,11 +19,10 @@ function getWeather(cit) {
     apiBackground(weather);
   });
 }
-
-window.addEventListener('load', (event) => {
+getWeather(cit);
+window.addEventListener('load', () => {
   const search = document.querySelector('#search');
   search.addEventListener('click', () => {
-    console.log('hello');
     const inputBox = document.querySelector('#city-name');
     const text = inputBox.value;
     getWeather(text);
