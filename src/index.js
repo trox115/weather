@@ -1,5 +1,5 @@
-import { apiBackground } from './backgroud';
-import { weatherApi } from './Api';
+import apiBackground from './backgroud';
+import weatherApi from './Api';
 
 const city = 'Évora';
 weatherApi(city).then((data) => {
