@@ -10,7 +10,7 @@ async function weatherApi(city, unit) {
     const data = await response.json();
     return data;
   } catch (err) {
-    console.log('Could not fetch any data');
+    console.error(`${e.name}: ${e.message}`);
   }
 }
 
