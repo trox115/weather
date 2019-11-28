@@ -32,16 +32,17 @@ function createBox() {
   h34.innerText = 'Condition:';
 
   const weatherFooter = createEl('div', 'weather-footer');
-  const select = createEl('select', 'units');
-  const option1 = createEl('option', '');
-  const option2 = createEl('option', '');
-  option1.innerText = 'Celsius';
-  option1.value = 'Celsius';
-  option2.value = 'Fahrneit';
-  option2.innerText = 'Fahrneit';
-  select.appendChild(option1);
-  select.appendChild(option2);
-  weatherFooter.appendChild(select);
+  const l = createEl('label', 'switch');
+  const inputT = createEl('input', 'tog');
+  inputT.type = 'checkbox';
+  const spanT = createEl('span', 'slider');
+  const cel = createEl('span', '');
+  cel.innerText = 'Celsius?';
+  weatherFooter.appendChild(cel);
+
+  l.appendChild(inputT);
+  l.appendChild(spanT);
+  weatherFooter.appendChild(l);
 
   const label = createEl('label', '');
   label.innerText = 'Location:';
