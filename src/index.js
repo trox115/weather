@@ -1,6 +1,7 @@
 import apiBackground from './backgroud';
 import weatherApi from './Api';
 import createBox from './domFile';
+import 'bootstrap';
 
 createBox();
 const cit = 'Macedo de Cavaleiros';
