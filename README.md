@@ -26,9 +26,7 @@ This project was created by:
 
 # Live Version
 
-You can view the live version [here](https://trox115.github.io/)
-
-You can view the development version [here](https://trox115.github.io/)
+You can view the live version [here](https://trox115.github.io/weather)
 
 # License
 
