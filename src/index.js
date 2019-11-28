@@ -26,7 +26,7 @@ function getWeather(cit, cit2) {
 getWeather(cit, cit2);
 
 function checkTogle() {
-  if (toggle.checked == true) {
+  if (toggle.checked === true) {
     return 'Celsius';
   }
   return 'Fahrneit';
